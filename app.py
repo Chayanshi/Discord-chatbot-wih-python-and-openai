@@ -21,6 +21,7 @@ class MyClient(discord.Client):
         chat += f"{message.author}: {message.content}"
         print(f'Message from {message.author}: {message.content}')
 
+        print(self.user)
         if self.user != message.author:
             if self.user in message.mentions:
                 print(chat)
